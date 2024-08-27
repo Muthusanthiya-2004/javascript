@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>radian</title>
+    <style>
+        .script {
+            background-clip: text;
+            background-image: linear-gradient(to right, rgb(41, 55, 61), blue);
+            color: transparent;
+            font-size: 20px;
+            width: 80%;
+            height: 500px;
+            text-align: center;
+            align-content: center;
+            margin-left: 10%;
+            animation: fade 3s ease;
+        }
+        @keyframes fade{
+            0%{
+                transform: skew(45deg);
+            }
+            50%{
+                transform: skew(180deg);
+            }
+            100%{
+                transform: skew(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="script">
+        <script>
+            var deg = parseInt(prompt("Enter deg value :"));
+            var rad = deg * (3.14 / 180);
+            document.write(`radian value=${rad}`);
+        </script>
+    </div>
+</body>
+
+</html>

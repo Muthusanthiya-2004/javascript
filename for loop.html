@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>for loop</title>
+</head>
+<body>
+    <script>
+        var x=parseInt(prompt("Enter the x value:"));
+        var y=parseInt(prompt("Enter the y value:"));
+        var a=parseInt(prompt("Enter the a value:"));
+        var b=parseInt(prompt("Enter the b value:"));
+        switch(x>y){
+            case true: 
+            for (var i=x; i>=y; i--){
+                if(i%a==0 && i%b!=0){
+                    document.write(i+'<br>');
+                }
+            }
+            break
+            case false: 
+            for (var i=x; i<=y; i++){
+                if(i%a==0 && i%b!=0){
+                    document.write(i+'<br>');
+                }
+            }
+            break
+            default: 
+            document.write("Enter the correct value");
+        }
+    </script>
+</body>
+</html>
