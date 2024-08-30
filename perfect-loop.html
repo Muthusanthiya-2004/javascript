@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>perfect</title>
+</head>
+<body>
+    <script>
+    
+        for (var i=1; i<=500; i++){
+            sum = 0;
+            for (var j = 1; j<i; j++){
+                if(i%j==0){
+                    sum+=j;
+                }
+            }
+            if(sum == i){
+                document.write(i+"<br>")
+            }
+            
+        }
+    </script>
+</body>
+</html>

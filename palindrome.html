@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>palindrome</title>
+</head>
+
+<body>
+    <script>
+        var    x = parseInt(prompt("Enter the value:"));
+        var  rev = 0;
+        var temp = x;
+        while (temp > 0) {
+               d = temp % 10;
+             rev = (rev * 10) + d;
+            temp = Math.floor(temp / 10);
+        }
+        if (rev == x) {
+            document.write("its a palindrome");
+        }
+        else {
+            document.write("its not a palindrome");
+        }
+
+    </script>
+</body>
+
+</html>
